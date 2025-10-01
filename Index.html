@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Viewer</title>
+  <style>
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #d9e4f5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .certificate-card {
+      background: #ffffff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .certificate-card h1 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #2a3d66;
+    }
+
+    .certificate-card p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    .pdf-button {
+      background-color: #357ABD;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      transition: all 0.25s ease;
+      display: inline-block;
+    }
+
+    .pdf-button:hover {
+      background-color: #285a8e;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="certificate-card">
+    <h1>Course Certificate</h1>
+    <a href="NOC25CS104S333208645.pdf" target="_blank" class="pdf-button">
+      View Certificate
+    </a>
+  </div>
+
+</body>
+</html>
